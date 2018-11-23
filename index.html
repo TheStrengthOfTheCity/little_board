@@ -10,29 +10,28 @@
 
     <script src="js/app.js"></script>
 
-    <script src="lib/module.js"></script>
-
-    <script src="js/service.js"></script>
-
     <link rel="stylesheet" href="css/style.css">
 
     <title>Angular App Demo</title>
   </head>
 
+  <!-- 'ng-app' - angular module binding -->
+  <!-- 'ng-controller' - angular controller binding -->
   <body ng-app="little_board" ng-controller="Main as vm">
 
     <h1>{{vm.title}}</h1>
-    <button class="GET" ng-click="vm.getData()">GET Data</button>
 
-    <ul class="event-list" ng-model="vm.events">
+    <!-- binding button click to getData() function in data model -->
+    <button ng-click="vm.getData()">Demo GET Request</button>
+
+    <!-- bound this list to the array containing events in data model -->
+    <ul ng-model="vm.events">
       <li ng-repeat="event in vm.events" >
         <p>Name: {{event.name}}</p>
         <p>Date: {{event.date}}</p>
         <p>Postcode: {{event.postcode}}</p>
       </li>
     </ul>
-
-    <button class="POST" >POST Data</button>
 
   </body>
 

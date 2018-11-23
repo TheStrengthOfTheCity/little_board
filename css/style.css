@@ -5,53 +5,46 @@
   font-family: Arial, sans-serif;
 }
 
-.GET {
-  background-color: #155BB4;
-}
-
-.POST {
-  background-color: #00B445;
-}
-
-.PUT {
-  background-color: #CB872B;
-}
-
-.DELETE {
-  background-color: #B1002A;
-}
-
 h1 {
   text-align: center;
+  padding-top: 20px;
 }
 
 button {
   background: none;
   border: none;
-  width: 100px;
-  height: 50px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #155BB4;
   color: white;
   margin: 20px;
   box-shadow: 0px 0px 7px black;
   transition: background-color 0.2s linear;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 button:hover {
-  background-color: rgb(42, 118, 218);
+  background-color: #2a76da;
+  cursor: pointer;
 }
 
-.event-list {
+ul {
   list-style-type: none;
-  margin-left: 20px;
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.event-list li {
+ul li {
   padding: 20px;
   margin-bottom: 10px;
-  width: 50%;
-  background-color: #f7f7f7;
+  background-color: #eeeeee;
 }
 
-.event-list li p {
+ul li p {
   margin-bottom: 5px;
 }

@@ -1,2 +1,3 @@
 # little_board
-a minimalist angularjs spwa that demos requests to an api
+
+A minimalist AngularJS SPWA that demos HTTP requests to an API.
